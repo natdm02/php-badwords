@@ -1,17 +1,10 @@
 <?php
-   
- //paragrafo 
-   $lorem = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum necessitatibus distinctio, 
-   eveniet excepturi quas consequuntur assumenda voluptate tempore optio neque.'; 
-//lunghezza stringa
-   $lunghezza_stringa_lorem = strlen($lorem);
+
+ $test = 'php';
+ $paragrafo = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, commodi?';
+
 
 ?>
-
-
-
-
-
 
 
 
@@ -25,9 +18,24 @@
 </head>
 <body>
     <div>
-        <h1>ciao php!</h1>
-        <p><?php echo $lorem ?></p>
-        <p> il paragrafo è lungo <?php echo $lunghezza_stringa_lorem ?> </p>
+
+        <h1>ciao <?php echo $test ?>! </h1>
+        
+        <form action="prova.php" method="POST">
+
+        <textarea name="paragraph" id="paragraph">scrivi una parola</textarea>
+
+        <br>
+
+        <label for="badword">scrivi una parola da censurare</label>
+
+        <input type="text" name="badword" id="badword" value="Lorem">
+
+        <input type="submit" value="Invia">
+
+    </form>
+
+    
     </div>
 </body>
 </html>
