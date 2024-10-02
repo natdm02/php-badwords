@@ -11,10 +11,26 @@
 </head>
 
 <body>
-    <div>
-        <h1>
-            bad words
-        </h1>
+
+    <div class="container mt-5">
+
+        <h2>
+            paragrafo e parola da censurare
+        </h2>
+
+        <form action="process.php" method="POST">
+
+            <div class="form-group">
+                <textarea class="form-control" name="paragrafo" rows="5" placeholder="paragrafo" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="parola" placeholder="parola" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Invia</button>
+
+        </form>
     </div>
 </body>
 </html>
