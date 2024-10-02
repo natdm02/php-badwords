@@ -12,5 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "<p>$paragrafo</p>";
     echo "<p>Lunghezza: " . strlen($paragrafo) . " caratteri</p>";
 
+    //2. censura
+    $paragrafo_censurato = str_ireplace($parola, '***', $paragrafo);
+
+    //2. stampo paragrafo  e lunghezza censurato
+    echo "<h3>Paragrafo censurato:</h3>";
+    echo "<p>$paragrafo_censurato</p>";
+    echo "<p>Lunghezza: " . strlen($paragrafo_censurato) . " caratteri</p>";
 }
 
